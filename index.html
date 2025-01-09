@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="A short description for your site...">
+    <title>Your Name - Portfolio</title>
+
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-nMbY0UvmgrMhd3QJrdsl9BXanOhPYdeKhF6bE6tkak7hJ0WfKXf5KK6vm+n7TGiB" crossorigin="anonymous">
+    
+    <!-- Custom Styles -->
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header .logo-container h1 {
+            font-size: 2.2rem;
+            color: white;
+            margin: 0;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Main Section */
+        section {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .wrapper {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        /* Featured Projects */
+        .featured {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .featured article {
+            background-color: #fff;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .featured article:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .featured img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .featured h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin: 20px;
+            font-weight: 600;
+        }
+
+        .featured p {
+            font-size: 1rem;
+            color: #666;
+            margin: 0 20px 20px;
+        }
+
+        /* About Section */
+        #about-contact {
+            background-color: #f9f9f9;
+        }
+
+        .profile-photo img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .social a {
+            text-decoration: none;
+            margin-right: 20px;
+            color: #333;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social a:hover {
+            color: #f39c12;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        section {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo-container">
+                <h1>Your Name</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about-contact">About</a></li>
+                    <li><a href="#about-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="work">
+        <div class="wrapper">
+            <h2>Featured Projects</h2>
+            <div class="featured">
+                <article>
+                    <a href="#"><img src="https://dummyimage.com/510x300/c4c4c4/fff&text=Featured+Project" alt="Featured Project"></a>
+                    <h3>Project Title</h3>
+                    <p>Project description and what was accomplished.</p>
+                </article>
+                <article>
+                    <a href="#"><img src="https://dummyimage.com/510x300/c4c4c4/fff&text=Featured+Project" alt="Featured Project"></a>
+                    <h3>Project Title</h3>
+                    <p>Project description and what was accomplished.</p>
+                </article>
+            </div>
+
+            <h2>More Projects</h2>
+            <div class="projects">
+                <article>
+                    <a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="Project Image"></a>
+                    <h3>Project Title</h3>
+                    <p><strong>Role:</strong> Developer</p>
+                    <p><strong>Description:</strong> This project was aimed at solving a unique challenge in...</p>
+                </article>
+                <article>
+                    <a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="Project Image"></a>
+                    <h3>Project Title</h3>
+                    <p><strong>Role:</strong> Designer</p>
+                    <p><strong>Description:</strong> Revamping the UI/UX of a popular e-commerce platform...</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-contact">
+        <div class="wrapper">
+            <div class="profile-photo">
+                <img src="http://placehold.it/260?text=Your+Photo" alt="Profile Photo">
+            </div>
+            <article>
+                <h2>About Me</h2>
+                <p>Creative designer and developer focused on building user-centric, functional, and aesthetically pleasing web solutions. I specialize in full-stack development and design, ensuring a balance of both technical performance and visual appeal.</p>
+                <h3>Skills</h3>
+                <p>Proficient in HTML, CSS, JavaScript, React, and more. I am passionate about learning new technologies and improving my craft every day.</p>
+            </article>
+
+            <article>
+                <h2>Contact Me</h2>
+                <p>Let's create something amazing together! Reach out via email or follow me on social media.</p>
+                <p><i class="fa fa-envelope"></i> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p><i class="fa fa-phone"></i> 123-456-7890</p>
+
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
